@@ -1,0 +1,187 @@
+:root {
+  --blanco: #fff;
+  --negro: #111;
+  --gris: #343A40;
+
+  --fontPrimary: font-family: 'Josefin Sans', sans-serif;
+  --fontTitle: font-family: 'Raleway', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--fontPrimary);
+  line-height: 1.8;
+}
+h1,h2,h3 {
+  font-weight: 700;
+  margin: 1rem 0 4rem 0;
+}
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 5.8rem;
+}
+h3 {
+  font-size: 5rem;
+}
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  width: 95%;
+}
+.btn {
+  color: var(--gris);
+  background-color: var(--blanco);
+  border: 1px solid var(--gris);
+  padding: 0.5rem 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  color: var(--blanco);
+  background-color: var(--gris);
+}
+
+/* --------- Utilidades -------- */
+.text-center {
+  text-align: center;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+
+/* ---------------Header --------- */
+/* ---------------Header --------- */
+/* ---------------Header --------- */
+.notavif.notwebp .header {
+  background-image: url(../img/hero-mazamitla.jpg);
+}
+.webp .header{
+  background-image: url(../img/hero-mazamitla.webp);
+}
+.avif .header{
+  background-image: url(../img/hero-mazamitla.avif);
+}
+.header {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 5rem 0;
+  transform: gray;
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 2rem;
+  }
+}
+.site-name {
+  font-family: var(--fontTitle);
+  margin-top: 3.2rem;
+  font-weight: 900;
+  font-size: 2.7rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .site-name {
+    font-size: 4.8rem;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  .site-name span {
+    font-weight: 900;
+    /* display: block; */
+  }
+}
+.header-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: var(--blanco);
+}
+/* .bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+@media (min-width: 768px) {
+  .menu-bar {
+    align-items: flex-end;
+  }
+}
+.tel {
+  display: flex;
+}
+.tel::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../img/telefono.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+}
+.menu-bar a{
+  color: var(--blanco);
+  font-weight: 700;
+  font-size: 2rem;
+  /* width: 100%; */
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+.navbar a {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .navbar a {
+    width: auto;
+  }
+}
+.navbar a:hover {
+  background-color: rgb(255 255 255 / .5);
+  padding: 1rem;
+  font-weight: 900;
+  color: var(--negro);
+}
+.slogan h1 {
+  font-size: 3.5rem;
+}
+.slogan p {
+  font-size: 2rem;
+}
